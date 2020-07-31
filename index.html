@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Vas Ki Hop!</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo text-uppercase">Vas Ki Hop</h1>
+    </header>
+
+    <main class="container">
+        <!--  HomePage     -->
+        <div class="show" id="homePage">
+            <div class="content-container main-bg-color">
+
+                <div class="flip-box item1">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front image-border">
+                            <img src="IMG/finger.png" alt="Vaskihop">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Instruction</h2>
+                            <p>How to play this game:</p>
+                            <p>In this game player(You) plays vs. computer. <br>
+                                If you want to play this game click "Start" button. <br>
+                                In new window enter your name and click "Let's play" button. <br>
+                                This game consists of 5 rounds and wins that (you or computer) who wins more rounds. <br>
+                                In game window select one of button: well, paper or scissors. <br>
+                            </p>
+                            <ul>
+                                <li>Well wins vs. scissors.</li>
+                                <li>Paper wins vs. well.</li>
+                                <li>Scissors wins. vs paper.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item2">
+                    <button class="start-button" id="start">Start</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enter player name     -->
+        <div class="hide" id="inputPage">
+
+            <div class="content-container main-bg-color">
+                <div class="input-box">
+                    <form id="form">
+                        <label for="fname" class="display-4">What's your name?</label>
+                        <br>
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+
+                        <input type="button" value="Let's play" id="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game page   -->
+        <div class="hide" id="gamePage">
+
+            <div class="content-container main-bg-color">
+                <div class="container-game">
+                    <div class="first-element">
+                        <figure>
+                            <img src="IMG/finger.png" alt="Player" id="img-player" class="img-game">
+                            <figcaption id="player"></figcaption>
+                        </figure>
+                    </div>
+                    <div class="second-element hide" id="gameInfo">
+                        <p class="h4 text-uppercase">Round: </p><span>
+                            <p class="h4" id="round"></p>
+                            <p class="h5">Winner of this round:</p>
+                            <p class="h5" id="print-winner"></p>
+                        </span>
+                    </div>
+                    <div class="third-element">
+                        <figure>
+                            <img src="IMG/finger.png" alt="Computer" id="img-computer" class="img-game">
+                            <figcaption id="computer">Computer</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <section class="container-buttons show" id="gameButtons">
+                    <button class="game-button" id="well" data-index="1">Well</button>
+                    <button class="game-button" id="paper" data-index="2">Paper</button>
+                    <button class="game-button" id="scissors" data-index="3">Scissors</button>
+                </section>
+
+                <section class="hide" id="resultButton">
+                    <button class="result-button" id="result">Show me result</button>
+                </section>
+
+            </div>
+        </div>
+
+        <div class="hide" id="winnerPage">
+            <div class="content-container main-bg-color">
+                <div class="input-box">
+                    <p class="display-4">And the winner is...</p>
+                    <p class="display-4" id="winnerOfGame"></p>
+                </div>
+                <div class="container-buttons">
+                    <button class="again-button" id="return">Play Again</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="text-center">Copyright &#9400; 2020, Toma Samulionyte</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="JS/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

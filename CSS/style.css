@@ -1,0 +1,289 @@
+/*general rules*/
+body {
+    background-image: url(../IMG/backimage.png)
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.logo {
+    font-family: 'Acme', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* box background color */
+.main-bg-color {
+    background-color: rgb(58, 221, 58);
+    height: 540px;
+    border-style: double;
+    border-width: 5px;
+}
+
+/*set box size*/
+.content-container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/*HOME PAGE card and button*/
+.item1 {
+    float: left;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.item2 {
+    float: right;
+    padding-top: 200px;
+    padding-right: 140px;
+}
+
+.image-border {
+    border-radius: 20px;
+}
+
+/*FLIP IMG*/
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 430px;
+    height: 440px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+    /*
+    padding-top: 40px;
+    padding-left: 30px; 
+*/
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+    background-color: rgb(58, 221, 58);
+    color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+/*    background-color: #fafafa;*/
+    background-color: rgb(58, 221, 58);
+    color: rgb(26, 13, 0);
+    transform: rotateY(180deg);
+}
+
+/*BUTTON IN INDEX PAGE*/
+.start-button {
+    background-color: rgb(93, 244, 240);
+    height: 100px;
+    width: 170px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: -1px 0 rgb(26, 13, 0), 0 1px rgb(26, 13, 0), 1px 0 rgb(26, 13, 0), 0 -1px rgb(26, 13, 0); 
+    font-size: 30px;
+    padding: 15px 32px;
+    border-radius: 4px;
+}
+
+.start-button:hover {
+    background-color: rgb(51, 209, 200);
+    text-decoration: none;
+}
+
+/*INPUT NAME PAGE*/
+.input-box {
+    padding-top: 180px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+input[type=button]:hover {
+    background-color: rgb(51, 209, 200);
+}
+
+input[type=text] {
+    width: 30%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    font-size: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=button] {
+    width: 150px;
+    background-color: rgb(93, 244, 240);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: -1px 0 rgb(26, 13, 0), 0 1px rgb(26, 13, 0), 1px 0 rgb(26, 13, 0), 0 -1px rgb(26, 13, 0); 
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*GAME PAGE*/
+
+/*Button in Game page*/
+
+
+/*Image in Game page*/
+.container-game {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.first-element {
+    width: 300px;
+    height: auto;
+    padding: 30px;
+}
+
+.second-element {
+    width: 250px;
+    height: auto;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.third-element {
+    width: 300px;
+    height: auto;
+    padding: 30px;
+}
+
+.img-game {
+    width: 100%;
+    border-radius: 4px;
+}
+
+figcaption {
+    font-size: 30px;
+    color: #f2fff0;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -1px 0 rgb(26, 13, 0), 0 1px rgb(26, 13, 0), 1px 0 rgb(26, 13, 0), 0 -1px rgb(26, 13, 0);
+}
+
+.winner {
+    font-size: 30px;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 198, 128);
+    text-shadow: -1px 0 rgb(255, 140, 0), 0 1px rgb(255, 140, 0), 1px 0 rgb(255, 140, 0), 0 -1px rgb(255, 140, 0);
+}
+.loser {
+    font-size: 30px;
+    color: #f2fff0;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -1px 0 rgb(26, 13, 0), 0 1px rgb(26, 13, 0), 1px 0 rgb(26, 13, 0), 0 -1px rgb(26, 13, 0);
+}
+
+section {
+    margin: 0 auto;
+}
+
+.container-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.game-button {
+    background-color: rgb(93, 244, 240);
+    height: 100px;
+    width: 170px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: -1px 0 rgb(26, 13, 0), 0 1px rgb(26, 13, 0), 1px 0 rgb(26, 13, 0), 0 -1px rgb(26, 13, 0);
+    font-size: 30px;
+    padding: 15px 32px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.game-button:hover {
+    background-color: rgb(51, 209, 200);
+    border: none;
+}
+
+.result-button {
+    background-color: rgb(93, 244, 240);
+    height: 100px;
+    width: 300px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: -1px 0 rgb(26, 13, 0), 0 1px rgb(26, 13, 0), 1px 0 rgb(26, 13, 0), 0 -1px rgb(26, 13, 0);
+    font-size: 30px;
+    padding: 15px 32px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.again-button {
+    background-color: rgb(93, 244, 240);
+    height: 100px;
+    width: 250px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: -1px 0 rgb(26, 13, 0), 0 1px rgb(26, 13, 0), 1px 0 rgb(26, 13, 0), 0 -1px rgb(26, 13, 0); 
+    font-size: 30px;
+    padding: 15px 32px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+footer {
+    padding-top: 10px;
+}

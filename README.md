@@ -1,6 +1,6 @@
 # VaskiHop Game done with Javascript
 
-##Instruction:
+## Instruction:
 - User input his name and start game. 
 - He should choose from 3 options. 
 - App will generate option too and compare it with user's option.
